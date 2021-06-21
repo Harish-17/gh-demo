@@ -1,0 +1,10 @@
+.child {
+  display: inline-block;
+  height: auto;
+  text-align: left;
+  min-width: 20%;
+  max-width: 20%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
