@@ -88,12 +88,13 @@ export default class App extends PureComponent {
   };
 
   handleListItemClick = (oldData) => {
-    getDetails(/*"448804000000805001"*/ oldData.id).then((data) => {
-      //console.log("getdetails", data);
-      const _apiData = { ...this.state.apiData };
-      const _list = _apiData.data;
-      const index = _list.findIndex((elem) => elem.id === oldData.id);
-      _list[index] = data;
+    getDetails(oldData.id).then((data) => {
+      const _apiData = {
+        ...this.state.apiData,
+        data: [...this.state.apiData.data],
+      };
+      const index = _apiData.data.findIndex((elem) => elem.id === oldData.id);
+      _apiData.data[index] = data;
       this.setState({
         apiData: _apiData,
       });
