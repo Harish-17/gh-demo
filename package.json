@@ -2,7 +2,7 @@
   "name": "cart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://harish-17.github.io",
+  "homepage": "https://harish-17.github.io/gh-demo",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
